@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333333;
+  font-family: Arial;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #7a7272;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar .logo {
+  float: left;
+  color: #7a7272;
+  text-align: center;
+  padding: 0px 5px;
+}
+
+.navbar .principal {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: Arial;
+}
+
+.navbar a:hover,
+.dropdown:hover > a {
+  color: white;
+}
+
+.dropdown-links {
+  display: none;
+  margin-top: 46;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-links a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-links a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-links {
+  display: block;
+}
+
+.contenido {
+  height: 90%;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+.presentacion {
+  height: 30%;
+  width: 100%;
+  background-image: url("./img/background.jpg");
+  display: block;
+}
+
+.presentacion .subtitulo {
+  font-family: Arial;
+  font-size: 36;
+  color: white;
+  margin: 0;
+  text-align: center;
+  line-height: 150px;
+}
+
+.presentacion > p {
+  color: white;
+  font-family: Arial;
+  font-size: 20;
+  margin: 0;
+  text-align: center;
+}
+
+.display {
+  height: 60%;
+  width: 70%;
+  margin: auto;
+}
+
+.texto {
+  float: left;
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 20px;
+  font-family: Arial;
+  line-height: 30px;
+  clear: left;
+  width: 48%;
+}
+
+.imagen {
+  float: left;
+  margin: 0;
+  clear: right;
+  width: 50%;
+  margin-top: 10px;
+  position: relative;
+}
+
+ul.notas li {
+  position: absolute;
+  border: medium solid white;
+  list-style: none;
+  display: none;
+}
+
+div.imagen:hover ul.notas li {
+  display: block;
+}
+
+ul.notas li#nota1 p {
+  position: absolute;
+  top: 100%;
+  background: white;
+  opacity: 0.65;
+  margin: 10px 0 0 0;
+  padding: 0.3em;
+  display: none;
+}
+
+ul.notas li#nota1:hover p {
+  display: block;
+}
+
+ul.notas li#nota1 {
+  width: 130px;
+  height: 200px;
+  top: 35px;
+  left: 220px;
+  clear: left;
+}
+
+ul.notas li#nota2 p {
+  position: absolute;
+  top: -5%;
+  left: 110%;
+  background: white;
+  opacity: 0.65;
+  margin: 10px 0 0 0;
+  padding: 0.3em;
+  display: none;
+}
+
+ul.notas li#nota2:hover p {
+  display: block;
+}
+
+ul.notas li#nota2 {
+  width: 120px;
+  height: 140px;
+  top: 330px;
+  left: 240px;
+  clear: left;
+}
+
+.display > ul,
+.display > ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.display > ul li span {
+  font-family: Arial;
+  font-size: 15;
+}
+
+.sprite {
+  background-image: url(./img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  margin: 35px;
+}
+
+.sprite-NOTW {
+  width: 163px;
+  height: 250px;
+  background-position: 0px 0px;
+}
+
+.sprite-MOTS {
+  width: 163px;
+  height: 250px;
+  background-position: -164px 0px;
+}
+
+.sprite-FOWM {
+  width: 163px;
+  height: 250px;
+  background-position: -329px 0px;
+}
+
+.sprite-DOS {
+  width: 163px;
+  height: 250px;
+  background-position: 0px -251px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #333333;
+}
+
+.footer ul,
+.footer ul li {
+  display: inline-block;
+}
+
+.footer {
+  float: right;
+}
+
+.footer a {
+  text-decoration: none;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.footer a > span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+}
